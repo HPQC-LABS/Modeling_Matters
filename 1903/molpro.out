@@ -5005,3 +5005,33 @@ Geometry recognized as XYZ
  Total number of CSFs:                  1649840414
 
  Molecular orbitals read from record     2100.2  Type=RHF/CANONICAL (state 1.1)
+
+ Integral transformation finished. Total CPU:3293.02 sec, npass=  1  Memory used:4611.93 MW
+
+ Starting RMP2 calculation
+
+ Wavefunction is spin-projected
+
+ ITER.      SQ.NORM     CORR.ENERGY   TOTAL ENERGY   ENERGY CHANGE        DEN1      VAR(S)    VAR(P)  DIIS     TIME
+   1      2.36326097    -3.77929788 -1107.78983747    -3.77929788    -0.01879620  0.11D-12  0.92D-02  1  1  3667.83
+   2      2.38576347    -3.79972076 -1107.81026035    -0.02042288    -0.00004891  0.36D-14  0.39D-04  2  2  4038.66
+   3      2.38683344    -3.80017938 -1107.81071897    -0.00045863    -0.00000017  0.75D-16  0.15D-06  3  3  4407.98
+   4      2.38686011    -3.80018373 -1107.81072332    -0.00000435    -0.00000000  0.15D-17  0.64D-09  4  4  4783.25
+   5      2.38686038    -3.80018376 -1107.81072335    -0.00000003    -0.00000000  0.30D-19  0.45D-11  5  5  5175.74
+
+ Norm of t1 vector:      0.00000190      S-energy:    -0.00000000      T1 diagnostic:  0.00000010
+ Norm of t2 vector:      1.17765037      P-energy:    -3.80018376
+                                         Alpha-Beta:  -2.76611671
+                                         Alpha-Alpha: -0.51703352
+                                         Beta-Beta:   -0.51703352
+
+ Spin contamination <S**2-Sz**2-Sz>     0.00000000
+  Reference energy                  -1104.010539589570
+  RHF-RMP2 correlation energy          -3.800183759514
+ !RHF-RMP2 energy                   -1107.810723349084
+ (NB above energy spin projected)
+
+ Starting RCCSD calculation
+
+ ITER.      SQ.NORM     CORR.ENERGY   TOTAL ENERGY   ENERGY CHANGE        DEN1      VAR(S)    VAR(P)  DIIS     TIME
+   1      2.32913080    -3.76318386 -1107.77372345    -3.76318386    -0.10554820  0.16D-01  0.27D-01  0  0 60803.57
