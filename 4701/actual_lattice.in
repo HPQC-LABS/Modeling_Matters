@@ -1,0 +1,45 @@
+ &CONTROL
+                       title = 'Mn2CoGa' ,
+                 calculation = 'scf' ,
+                      outdir = '.' ,
+                  pseudo_dir = '/home/ujjawal/QE/QE_Sample_Input_Files/SSSP_efficiency_pseudos/' ,
+                    
+                      prefix = 'Mn2CoGa' ,
+               etot_conv_thr = 1.0D-6 ,
+               forc_conv_thr = 1.0D-6 ,
+                     tstress = .true. ,
+                     tprnfor = .true. ,
+ /
+ &SYSTEM
+                       ibrav = 2,
+                   celldm(1) = 10.95687996,
+                         nat = 4,
+                        ntyp = 3,
+                     ecutwfc = 200 ,
+                     ecutrho = 2000 ,
+                 occupations = 'smearing' ,
+                     degauss = 0.01 ,
+                    smearing = 'marzari-vanderbilt' ,
+                       nspin = 2 ,
+   starting_magnetization(1) = -0.167,
+   starting_magnetization(2) = -0.083,
+   starting_magnetization(3) =  0.005,
+ /
+ &ELECTRONS
+ /
+ &IONS
+ /
+ &CELL
+ /
+ATOMIC_SPECIES
+   Mn   54.93804  mn_pbe_v1.5.uspp.F.UPF 
+   Co   58.93319  Co_pbe_v1.2.uspp.F.UPF 
+   Ga   69.72300  Ga.pbe-dn-kjpaw_psl.1.0.0.UPF 
+ATOMIC_POSITIONS alat 
+   Co      0.500000000    0.500000000    0.500000000    
+   Mn      0.250000000    0.250000000    0.250000000    
+   Ga      0.750000000    0.750000000    0.750000000    
+   Mn      0.000000000    0.000000000    0.000000000     
+K_POINTS automatic 
+ 12 12 12 0 0 0 
+
