@@ -1,0 +1,6 @@
+ ***,Zn
+memory 5880, M
+geometry={Zn}
+basis = cc-pVDZ
+wf,charge=0
+{df-rks,PBE}
