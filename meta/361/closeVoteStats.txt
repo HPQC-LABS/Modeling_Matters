@@ -6,13 +6,13 @@ kskinnerx16           18          January   2021                 1.5 years
 Cavenfish             15          March     2021                  2  years
 Anoop A Nair          13          August    2021                  1  year 
 schneiderfelipe       12          July      2020                  2  years
-Martin - マーチン     10          July      2021                  1  year
+Martin - マーチン      10          July      2021                  1  year
 Henry WH Hack v3.0    10          Never                         Infinity
-Glorfindel             9          Never                         Infinity
-Michael F. Herbst      8          May       2020                  2  years
-Mythreyi               6          May       2021                  1  year
-Roman Korol            5          September 2020                  2  years
-stafusa                4          June      2021                  1  year
+Glorfindel            9           Never                         Infinity
+Michael F. Herbst     8           May       2020                  2  years
+Mythreyi              6           May       2021                  1  year
+Roman Korol           5           September 2020                  2  years
+stafusa               4           June      2021                  1  year
 =============================================================================================
 
 sum([
