@@ -1,0 +1,153 @@
+#INFO: **** input file is /home/nike/Modeling_Matters/9743/fci/inp_1e-5_direct.py ****
+#!/usr/bin/env python
+# Author: Nike Dattani, nike@hpqc.org
+
+import numpy as np
+import pyscf
+from pyscf import gto, scf, ao2mo, fci,ci
+
+mol = pyscf.M(atom = 'Ne 0 0 0',basis = 'cc-pvDz',verbose=5,output='out_1e-5_direct.txt')
+mhf = scf.RHF(mol).run()
+mci = fci.FCI(mhf).set(conv_tol=1e-5,nroots=3)
+e, civec = mci.kernel()
+np.save('civec.npy', civec)
+#INFO: ******************** input file end ********************
+
+
+System: uname_result(system='Linux', node='cedar1.cedar.computecanada.ca', release='3.10.0-1160.80.1.el7.x86_64', version='#1 SMP Tue Nov 8 15:48:59 UTC 2022', machine='x86_64', processor='')  Threads 1
+Python 3.8.10 (default, Jun 16 2021, 14:20:20) 
+[GCC 9.3.0]
+numpy 1.23.0  scipy 1.9.3
+Date: Wed Jan  4 18:43:17 2023
+PySCF version 2.1.1
+PySCF path  /home/nike/.local/lib/python3.8/site-packages/pyscf
+
+[CONFIG] conf_file None
+[INPUT] verbose = 5
+[INPUT] max_memory = 4000 
+[INPUT] num. atoms = 1
+[INPUT] num. electrons = 10
+[INPUT] charge = 0
+[INPUT] spin (= nelec alpha-beta = 2S) = 0
+[INPUT] symmetry False subgroup None
+[INPUT] Mole.unit = angstrom
+[INPUT] Symbol           X                Y                Z      unit          X                Y                Z       unit  Magmom
+[INPUT]  1 Ne     0.000000000000   0.000000000000   0.000000000000 AA    0.000000000000   0.000000000000   0.000000000000 Bohr   0.0
+[INPUT] ---------------- BASIS SET ---------------- 
+[INPUT] l, kappa, [nprim/nctr], expnt,             c_1 c_2 ...
+[INPUT] Ne
+[INPUT] 0    0    [8    /2   ]  17880             0.000738 -0.000172
+                                2683              0.005677 -0.001357
+                                611.5             0.028883 -0.006737
+                                173.5             0.10854 -0.027663
+                                56.64             0.290907 -0.076208
+                                20.42             0.448324 -0.175227
+                                7.81              0.258026 -0.107038
+                                1.653             0.015063 0.56705
+[INPUT] 0    0    [1    /1   ]  0.4869               1
+[INPUT] 1    0    [3    /1   ]  28.39             0.046087
+                                6.27              0.240181
+                                1.695             0.508744
+[INPUT] 1    0    [1    /1   ]  0.4317               1
+[INPUT] 2    0    [1    /1   ]  2.202                1
+
+nuclear repulsion = 0
+number of shells = 5
+number of NR pGTOs = 26
+number of NR cGTOs = 14
+basis = cc-pvDz
+ecp = {}
+CPU time:         0.90
+
+
+******** <class 'pyscf.scf.hf.RHF'> ********
+method = RHF
+initial guess = minao
+damping factor = 0
+level_shift factor = 0
+DIIS = <class 'pyscf.scf.diis.CDIIS'>
+diis_start_cycle = 1
+diis_space = 8
+SCF conv_tol = 1e-09
+SCF conv_tol_grad = None
+SCF max_cycles = 50
+direct_scf = True
+direct_scf_tol = 1e-13
+chkfile to save SCF result = /tmp/tmp6zuaaqtu
+max_memory 4000 MB (current use 72 MB)
+Set gradient conv threshold to 3.16228e-05
+E1 = -183.50516676968874  E_coul = 55.03742292884888
+init E= -128.46774384084
+cond(S) = 8.818222868975129
+    CPU time for initialize scf      0.04 sec, wall time      0.06 sec
+  HOMO = -0.768451602547553  LUMO = 1.73692435014279
+  mo_energy =
+[-32.57014753  -1.85301272  -0.7684516   -0.7684516   -0.7684516
+   1.73692435   1.73692435   1.73692435   2.20434206   5.2652826
+   5.2652826    5.2652826    5.2652826    5.2652826 ]
+E1 = -182.19568800534324  E_coul = 53.70953094570108
+cycle= 1 E= -128.486157059642  delta_E= -0.0184  |g|= 0.147  |ddm|= 0.213
+    CPU time for cycle= 1      0.00 sec, wall time      0.00 sec
+  HOMO = -0.861960161482065  LUMO = 1.67388392231063
+  mo_energy =
+[-32.85407951  -1.95025843  -0.86196016  -0.86196016  -0.86196016
+   1.67388392   1.67388392   1.67388392   2.13717562   5.16405868
+   5.16405868   5.16405868   5.16405868   5.16405868]
+E1 = -182.80516616159053  E_coul = 54.316927877026586
+cycle= 2 E= -128.488238284564  delta_E= -0.00208  |g|= 0.0664  |ddm|= 0.0922
+    CPU time for cycle= 2      0.00 sec, wall time      0.00 sec
+  HOMO = -0.832038473251905  LUMO = 1.69454656913468
+  mo_energy =
+[-32.76553169  -1.9188152   -0.83203847  -0.83203847  -0.83203847
+   1.69454657   1.69454657   1.69454657   2.15937535   5.19672487
+   5.19672487   5.19672487   5.19672487   5.19672487]
+E1 = -182.61600601679817  E_coul = 54.12723047097639
+cycle= 3 E= -128.488775545822  delta_E= -0.000537  |g|= 0.000189  |ddm|= 0.0289
+    CPU time for cycle= 3      0.00 sec, wall time      0.00 sec
+  HOMO = -0.832104049753857  LUMO = 1.69456351331858
+  mo_energy =
+[-32.76564887  -1.91880376  -0.83210405  -0.83210405  -0.83210405
+   1.69456351   1.69456351   1.69456351   2.15942776   5.19671155
+   5.19671155   5.19671155   5.19671155   5.19671155]
+E1 = -182.6160931352698  E_coul = 54.12731758353246
+cycle= 4 E= -128.488775551737  delta_E= -5.92e-09  |g|= 6.55e-06  |ddm|= 0.000139
+    CPU time for cycle= 4      0.00 sec, wall time      0.00 sec
+  HOMO = -0.832096728694542  LUMO = 1.69455721646102
+  mo_energy =
+[-32.76563439  -1.91879789  -0.83209673  -0.83209673  -0.83209673
+   1.69455722   1.69455722   1.69455722   2.15942463   5.19671132
+   5.19671132   5.19671132   5.19671132   5.19671132]
+E1 = -182.61610110809036  E_coul = 54.12732555634952
+cycle= 5 E= -128.488775551741  delta_E= -3.5e-12  |g|= 3.64e-07  |ddm|= 3.1e-06
+    CPU time for cycle= 5      0.00 sec, wall time      0.00 sec
+  HOMO = -0.83209719471551  LUMO = 1.69455776783854
+  mo_energy =
+[-32.76563525  -1.91879817  -0.83209719  -0.83209719  -0.83209719
+   1.69455777   1.69455777   1.69455777   2.159425     5.19671147
+   5.19671147   5.19671147   5.19671147   5.19671147]
+E1 = -182.6160999222197  E_coul = 54.12732437047891
+Extra cycle  E= -128.488775551741  delta_E= 5.68e-14  |g|= 1.36e-07  |ddm|= 1.89e-07
+    CPU time for scf_cycle      0.06 sec, wall time      0.08 sec
+    CPU time for SCF      0.06 sec, wall time      0.08 sec
+converged SCF energy = -128.488775551741
+davidson 0 3  |r|= 1.26  e= [-128.48877554 -126.72275355 -126.6748501 ]  max|de|= -128  lindep= 0.00191
+davidson 1 6  |r|= 0.336  e= [-128.67184942 -126.87409069 -126.82764118]  max|de|= -0.183  lindep= 0.748
+davidson 2 9  |r|= 0.0812  e= [-128.68040275 -126.88053586 -126.83335103]  max|de|= -0.00855  lindep= 0.848
+davidson 3 12  |r|= 0.177  e= [-128.68085836 -126.88526254 -126.83411654]  max|de|= -0.00473  lindep= 0.652
+davidson 4 15  |r|= 0.297  e= [-128.68088039 -126.90987086 -126.8345322 ]  max|de|= -0.0246  lindep= 0.84
+Old state -> New state
+    1     ->     2 
+root 0 converged  |r|= 0.000589  e= -128.68088110948042  max|de|= -7.2e-07
+davidson 5 18  |r|= 0.161  e= [-128.68088111 -126.92616909 -126.85096658]  max|de|= 0.0589  lindep= 0.868
+davidson 6 3  |r|= 0.161  e= [-128.68088111 -126.92616909 -126.85096658]  max|de|= -5.93e-12  lindep= 0.997
+davidson 7 5  |r|= 0.166  e= [-128.68088111 -126.93125714 -126.8547922 ]  max|de|= -0.00509  lindep= 0.699
+davidson 8 7  |r|= 0.534  e= [-128.68088111 -126.96655706 -126.88183988]  max|de|= -0.0353  lindep= 0.914
+davidson 9 9  |r|= 0.275  e= [-128.68088111 -127.03208147 -126.90915992]  max|de|= -0.0655  lindep= 0.909
+davidson 10 11  |r|= 0.082  e= [-128.68088111 -127.03994844 -126.91088767]  max|de|= -0.00787  lindep= 0.925
+davidson 11 13  |r|= 0.0169  e= [-128.68088111 -127.04061696 -126.91105052]  max|de|= -0.000669  lindep= 0.872
+root 2 converged  |r|= 0.0018  e= -126.91105567311182  max|de|= -5.16e-06
+davidson 12 15  |r|= 0.00615  e= [-128.68088111 -127.04064421 -126.91105567]  max|de|= -2.73e-05  lindep= 0.888
+davidson 13 16  |r|= 0.00406  e= [-128.68088111 -127.04065134 -126.91105616]  max|de|= -7.13e-06  lindep= 0.867
+davidson 14 3  |r|= 0.00406  e= [-128.68088111 -127.04065134 -126.91105616]  max|de|= -7.5e-12  lindep= 0.999
+root 1 converged  |r|= 0.00176  e= -127.04065326912735  max|de|= -1.93e-06
+converged 15 4  |r|= 0.00176  e= [-128.68088111 -127.04065327 -126.91105629]  max|de|= -1.93e-06
