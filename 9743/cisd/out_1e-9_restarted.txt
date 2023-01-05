@@ -10,6 +10,7 @@ mol = pyscf.M(atom = 'Ne 0 0 0',basis = 'cc-pv5z',verbose=5,output='out_1e-9_res
 mhf = scf.RHF(mol).run()
 mci = ci.CISD(mhf).set(conv_tol=1e-9,nroots=3)
 e, civec = mci.kernel(ci0=np.load('civec.npy'))
+np.save('civec.npy', civec)
 #INFO: ******************** input file end ********************
 
 
@@ -17,7 +18,7 @@ System: uname_result(system='Linux', node='cedar1.cedar.computecanada.ca', relea
 Python 3.8.10 (default, Jun 16 2021, 14:20:20) 
 [GCC 9.3.0]
 numpy 1.23.0  scipy 1.9.3
-Date: Wed Jan  4 17:50:04 2023
+Date: Wed Jan  4 18:22:17 2023
 PySCF version 2.1.1
 PySCF path  /home/nike/.local/lib/python3.8/site-packages/pyscf
 
@@ -74,7 +75,7 @@ number of NR pGTOs = 108
 number of NR cGTOs = 91
 basis = cc-pv5z
 ecp = {}
-CPU time:         1.10
+CPU time:         0.72
 
 
 ******** <class 'pyscf.scf.hf.RHF'> ********
@@ -90,13 +91,13 @@ SCF conv_tol_grad = None
 SCF max_cycles = 50
 direct_scf = True
 direct_scf_tol = 1e-13
-chkfile to save SCF result = /tmp/tmp0ym8q09t
-max_memory 4000 MB (current use 72 MB)
+chkfile to save SCF result = /tmp/tmp0bryd8ed
+max_memory 4000 MB (current use 74 MB)
 Set gradient conv threshold to 3.16228e-05
 E1 = -183.6116929574056  E_coul = 55.07988096420296
 init E= -128.531811993203
 cond(S) = 2187.7726714626097
-    CPU time for initialize scf      0.87 sec, wall time      0.95 sec
+    CPU time for initialize scf      0.90 sec, wall time      0.93 sec
   HOMO = -0.775863695156076  LUMO = 0.522182241176242
   mo_energy =
 [-32.55639998  -1.85278813  -0.7758637   -0.7758637   -0.7758637
@@ -120,7 +121,7 @@ cond(S) = 2187.7726714626097
   94.32751372]
 E1 = -182.07601014110764  E_coul = 53.53281533321857
 cycle= 1 E= -128.543194807889  delta_E= -0.0114  |g|= 0.205  |ddm|= 0.176
-    CPU time for cycle= 1      0.06 sec, wall time      0.06 sec
+    CPU time for cycle= 1      0.07 sec, wall time      0.07 sec
   HOMO = -0.886166276822155  LUMO = 0.508297972944736
   mo_energy =
 [-32.88120632  -1.96819978  -0.88616628  -0.88616628  -0.88616628
@@ -240,11 +241,11 @@ cycle= 5 E= -128.546770129501  delta_E= -1.56e-10  |g|= 3.51e-06  |ddm|= 1.78e-0
   94.12660335]
 E1 = -182.5867534893803  E_coul = 54.0399833598783
 Extra cycle  E= -128.546770129502  delta_E= -7.96e-13  |g|= 7.89e-07  |ddm|= 1.52e-06
-    CPU time for scf_cycle      1.21 sec, wall time      1.29 sec
-    CPU time for SCF      1.21 sec, wall time      1.29 sec
+    CPU time for scf_cycle      1.25 sec, wall time      1.28 sec
+    CPU time for SCF      1.25 sec, wall time      1.28 sec
 converged SCF energy = -128.546770129502
 E1 = -182.5867534893803  E_coul = 54.0399833598783
-    CPU time for CCSD integral transformation      1.71 sec, wall time      1.71 sec
+    CPU time for CCSD integral transformation      1.46 sec, wall time      1.47 sec
 
 ******** <class 'pyscf.ci.cisd.RCISD'> ********
 CISD nocc = 5, nmo = 91
@@ -255,7 +256,7 @@ max_cycle = 50
 max_space = 12
 lindep = 0
 nroots = 3
-max_memory 4000 MB (current use 294 MB)
+max_memory 4000 MB (current use 295 MB)
 davidson 0 3  |r|= 0.00132  e= [-0.33719763  0.80457337  0.80459354]  max|de|= 0.805  lindep= 0.816
 davidson 1 6  |r|= 0.000962  e= [-0.33719767  0.80457312  0.80459334]  max|de|= -2.48e-07  lindep= 0.506
 root 0 converged  |r|= 2.04e-05  e= -0.33719766591648676  max|de|= -8.9e-10
