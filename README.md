@@ -23,3 +23,6 @@ Also files associated with the following questions on [Meta MMSE](https://matter
  Also files associated with proposals for the MMSE Logo:
  
  - [`/Logo`](https://github.com/HPQC-LABS/Modeling_Matters/tree/master/Logo) 
+   - [Logo needed for community ads!](https://mattermodeling.meta.stackexchange.com/q/122/5)
+   - [Let's work on our logo! (Improving on Anoop Nair's design)](https://mattermodeling.meta.stackexchange.com/q/254/5)
+   - [More opportunities to help MMSE with your artistic skills!](https://mattermodeling.meta.stackexchange.com/q/264/5)
