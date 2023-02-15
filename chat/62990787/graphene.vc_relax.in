@@ -1,0 +1,41 @@
+&CONTROL
+    calculation='vc-relax'
+    prefix='graphene'
+    outdir = './outdir'
+    pseudo_dir = '/home/abdul/dft/q-e/pseudo/'
+    forc_conv_thr=1.0e-4
+    etot_conv_thr=1.0e-5
+/
+&SYSTEM
+  ibrav = 12,
+  a = 2.460,
+  b = 2.460,
+  c= 20.000,
+  cosab=-0.500000,
+  nat = 2,
+  ntyp = 1,
+  ecutwfc = 40.0 ,
+  ecutrho = 400.0 ,
+  occupations = 'smearing' ,
+  degauss = 1.0d-4 ,
+  smearing = 'marzari-vanderbilt' ,
+/
+&ELECTRONS
+  conv_thr = 1.0e-10
+/
+&IONS
+  ion_dynamics='bfgs'
+/
+&CELL
+   press_conv_thr  = 0.5D0
+   press = 0.D0
+   cell_dynamics = 'bfgs',
+   cell_dofree     = '2Dxy'
+/
+ATOMIC_SPECIES
+       C    12.011 C.pbe-van_ak.UPF
+ATOMIC_POSITIONS crystal
+    C      0.000000000    0.000000000    0.250000000
+    C      0.333333333    0.666666667    0.250000000
+K_POINTS automatic
+4 4 4 0 0 0
