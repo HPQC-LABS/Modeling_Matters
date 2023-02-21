@@ -17,6 +17,7 @@ Contains files associated with the following questions at [MMSE](https://matterm
  - [`/10048`](https://github.com/HPQC-LABS/Modeling_Matters/tree/master/10048): [Interstitial charge from a cube file: Need help in python coding](https://mattermodeling.stackexchange.com/q/10048/5)
  - [`/10277`](https://github.com/HPQC-LABS/Modeling_Matters/tree/master/10277): [Why does CCSD work, but not CCSD(T), after reading an FCIDUMP in PySCF?](https://mattermodeling.stackexchange.com/q/10277/5). QC Bugs: [Issue022](https://github.com/HPQC-LABS/QCBugs/tree/master/Issue022).
  - [`/10402`](https://github.com/HPQC-LABS/Modeling_Matters/tree/master/10402): [Gaussian calculation terminates before job completion?](https://mattermodeling.stackexchange.com/q/10402/5)
+ - [`/10453`](https://github.com/HPQC-LABS/Modeling_Matters/tree/master/10453): [Why is my CISD restart failing in PySCF?](https://mattermodeling.stackexchange.com/q/10453/5). QC Bugs: [Issue023](https://github.com/HPQC-LABS/QCBugs/tree/master/Issue023) 
 
 Also files associated with the following questions on [Meta MMSE](https://mattermodeling.meta.stackexchange.com/):
 
