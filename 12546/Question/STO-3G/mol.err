@@ -1,0 +1,25 @@
+Note: The following floating-point exceptions are signalling: IEEE_INVALID_FLAG IEEE_DIVIDE_BY_ZERO IEEE_UNDERFLOW_FLAG IEEE_DENORMAL
+corrupted double-linked list
+
+Program received signal SIGABRT: Process abort signal.
+
+Backtrace for this error:
+#0  0x7f494701f171 in ???
+#1  0x7f494701e313 in ???
+#2  0x7f494604eb1f in ???
+#3  0x7f494604ea9f in ???
+#4  0x7f4946021e04 in ???
+#5  0x7f4946091036 in ???
+#6  0x7f494609819b in ???
+#7  0x7f49460989db in ???
+#8  0x7f494609b55a in ???
+#9  0x7f494609c6cd in ???
+#10  0x7f494701e608 in ???
+#11  0x7f494721b047 in ???
+#12  0x7f494722b03f in ???
+#13  0x435762 in ???
+#14  0x42146e in ???
+#15  0x402460 in ???
+#16  0x7f494603acf2 in ???
+#17  0x4024ad in ???
+#18  0xffffffffffffffff in ???

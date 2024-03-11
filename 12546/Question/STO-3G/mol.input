@@ -1,0 +1,23 @@
+&GATEWAY
+XBAS
+C.STO-3G
+H.STO-3G
+O.STO-3G
+End of basis
+ZMAT
+H1
+C1 1 1.097
+O1 2 1.343 1 111
+H2 3 0.972 2 106.3 1 180
+O2 2 1.202 3 124.9 4 0
+End of z-matrix
+&SEWARD
+&SCF
+ UHF
+&RASSCF
+  OUTOrbitals= Canonical
+  LumOrb
+&MOTRA
+  JobIph
+&CCSDT
+  CCT
