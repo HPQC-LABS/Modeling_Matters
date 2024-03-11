@@ -17,9 +17,17 @@ End of z-matrix
 &RASSCF
   OUTOrbitals= Canonical
   LumOrb
-  OUTOrbitals= Canonical
+  Symmetry= 1
+  Spin= 0
+  Charge= 0
+  NACTEL=24
+  NAC= 17
+  Ras2= 0
+  Frozen= 0
 &MOTRA
   JobIph
 &CCSDT
   CCT
+  Triples
+  3
 
