@@ -1,0 +1,5 @@
+&BANDS
+ outdir  = '../out/'
+ prefix  = 'aiida'
+ filband = 'CsPbI3.bands'
+/

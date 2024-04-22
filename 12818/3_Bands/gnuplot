@@ -1,0 +1,5 @@
+set title "Example Plot"
+set xlabel "X-axis"
+set ylabel "Y-axis"
+plot "CsPbI3.bands.gnu" with lines
+pause -1
