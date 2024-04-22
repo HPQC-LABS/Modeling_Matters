@@ -1,0 +1,28 @@
+# load the pw.x input from file
+load_fromPWI pwscf.in
+
+prefix "mpirun -np 2" 
+
+# open a file for writing resulting total energies
+set fid [open etot_vs_ecutrho.dat w]
+
+# loop over different "ecut" values
+foreach ecut { 4 6 8 10 12} {
+    # Scale by 40 as per documentation
+    set ecutscaled [expr { $ecut * 40 }]
+
+    # name of I/O files: $name.in & $name.out
+    set name pwscf_ecutrho-$ecutscaled
+
+    # set the pw.x "ecutrho" variable
+    SYSTEM "ecutrho = $ecutscaled"
+
+    # run the pw.x calculation
+    runPW $name.in
+
+    # extract the "total energy" and write it to file
+    set Etot [::pwtk::pwo::totene $name.out]
+    puts $fid "$ecutscaled $Etot"
+}
+
+close $fid

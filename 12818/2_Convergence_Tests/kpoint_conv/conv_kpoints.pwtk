@@ -1,0 +1,19 @@
+load_fromPWI pwscf.in
+
+prefix "mpirun -n 4"
+set fid [open etot-vs-kpoint.dat w]
+
+foreach k {8 10} {
+   
+        set name pwscf_kpoints-$k
+
+        K_POINTS automatic "$k $k $k 0 0 0"
+        runPW $name.in
+
+        set Etot [::pwtk::pwo::totene $name.out]
+        puts $fid "$k $Etot"
+   
+}
+
+close $fid
+
