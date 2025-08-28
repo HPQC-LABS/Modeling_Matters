@@ -1,0 +1,45 @@
+SPE on FeCO4 (C2v), S0
+Fe
+C 1 rFeCShort
+C 1 rFeCShort 2 aCCShort
+C 1 rFeCLong 3 aCCLS 2 d4132
+C 1 rFeCLong 2 aCCLS 3 d4132
+O 1 rFeOShort 2 aCOShort 3 d0
+O 1 rFeOShort 3 aCOShort 2 d0
+O 1 rFeOLong 4 aCOLong 5 d0
+O 1 rFeOLong 5 aCOLong 4 d0
+
+rFeCShort =    1.796531369024685
+rFeOShort =    2.954078447724298
+rFeCLong  =    1.844669135626477
+rFeOLong  =    2.998901502428020
+aCCShort  =  125.934062788513884
+aCCLS     =   92.171227592695573
+aCOShort  =  123.076776576971298
+aCOLong   =  169.817824805546564
+d0        =    0.00000
+d4132     =   94.261171532490849
+
+*ACES2(CALC = CC3     
+      BASIS = SPECIAL
+     DROPMO = 1>13
+  RELATIVTY = X2C1E
+   SCF_CONV = 10
+    CC_CONV = 8 
+ LINEQ_CONV = 8 
+   SCF_MAXCYC = 500
+    CC_MAXCYC = 500
+ LINEQ_MAXCYC = 500
+       MEMORY = 32
+     MEM_UNIT = GB)
+
+Fe:cc-pVDZ
+C:cc-pVDZ
+C:cc-pVDZ
+C:cc-pVDZ
+C:cc-pVDZ
+O:cc-pVDZ
+O:cc-pVDZ
+O:cc-pVDZ
+O:cc-pVDZ
+
