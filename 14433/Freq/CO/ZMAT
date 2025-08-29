@@ -1,0 +1,23 @@
+Frequencies on CO, S0
+C
+O 1 rCO
+
+rCO = 1.144618043127180
+
+*ACES2(CALC = CCSD(T) 
+      BASIS = SPECIAL
+FROZEN_CORE = ON
+        VIB = ANALYTIC
+   SCF_CONV = 10
+    CC_CONV = 8 
+ LINEQ_CONV = 8 
+   SCF_MAXCYC = 500
+    CC_MAXCYC = 500
+ LINEQ_MAXCYC = 500
+  CPHF_MAXCYC = 500
+       MEMORY = 4 
+     MEM_UNIT = GB)
+
+C:cc-pVDZ
+O:cc-pVDZ
+

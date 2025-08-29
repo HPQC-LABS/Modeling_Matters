@@ -1,0 +1,45 @@
+Frequencies on FeCO4 (C3v), S0
+Fe
+C 1 rFeCAx
+C 1 rFeCEq 2 aCAxCEq
+C 1 rFeCEq 2 aCAxCEq 3 dC
+C 1 rFeCEq 2 aCAxCEq 3 dnC
+O 1 rFeOAx 3 aCAxCEq 2 d0
+O 1 rFeOEq 2 aCAxOEq 3 d0
+O 1 rFeOEq 2 aCAxOEq 4 d0
+O 1 rFeOEq 2 aCAxOEq 5 d0
+
+rFeCAx  =    1.766187962670023
+rFeCEq  =    1.848613849159921
+rFeOAx  =    2.926573392448320
+rFeOEq  =    3.005744198822011
+aCAxCEq =   91.938235663845120
+aCAxOEq =   91.040423263180415
+d0      =    0.00000
+dnC     = -120.00000
+dC      =  120.0000
+
+*ACES2(CALC = CCSD(T) 
+      BASIS = SPECIAL
+FROZEN_CORE = ON
+        VIB = ANALYTIC
+   SCF_CONV = 10
+    CC_CONV = 8 
+ LINEQ_CONV = 8 
+   SCF_MAXCYC = 500
+    CC_MAXCYC = 500
+ LINEQ_MAXCYC = 500
+  CPHF_MAXCYC = 500
+       MEMORY = 32
+     MEM_UNIT = GB)
+
+Fe:cc-pVDZ
+C:cc-pVDZ
+C:cc-pVDZ
+C:cc-pVDZ
+C:cc-pVDZ
+O:cc-pVDZ
+O:cc-pVDZ
+O:cc-pVDZ
+O:cc-pVDZ
+
