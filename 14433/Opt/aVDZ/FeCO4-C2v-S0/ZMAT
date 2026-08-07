@@ -1,0 +1,47 @@
+Optimization on FeCO4 (C2v), S0
+FE
+X 1 RDX
+C 1 RC1* 2 AC1*
+C 1 RC1* 2 AC1* 3 D180
+C 1 RC2* 2 AC2* 4 D90
+C 1 RC2* 2 AC2* 3 D90
+O 1 RO1* 2 AO1* 4 D180
+O 1 RO1* 2 AO1* 3 D180
+O 1 RO2* 2 AO2* 6 D180
+O 1 RO2* 2 AO2* 5 D180
+
+RC1  =        1.790983255565001
+AC1  =       64.233133498766477
+RC2  =        1.836322430867198
+AC2  =       92.332092735120654
+RO1  =        2.952325893979423
+AO1  =       61.431716798503288
+RO2  =        2.993644997708591
+AO2  =       92.311675171948210
+RDX  =        1.25
+D90  =       90.00
+D180 =      180.00
+
+*ACES2(CALC = CCSD(T) 
+      BASIS = SPECIAL
+FROZEN_CORE = ON
+ OCCUPATION = 18-10-10-3
+   SCF_CONV = 9
+    CC_CONV = 7 
+ LINEQ_CONV = 7 
+   SCF_MAXCYC = 500
+    CC_MAXCYC = 500
+ LINEQ_MAXCYC = 500
+       MEMORY = 32
+     MEM_UNIT = GB)
+
+Fe:aug-cc-pVDZ
+C:aug-cc-pVDZ
+C:aug-cc-pVDZ
+C:aug-cc-pVDZ
+C:aug-cc-pVDZ
+O:aug-cc-pVDZ
+O:aug-cc-pVDZ
+O:aug-cc-pVDZ
+O:aug-cc-pVDZ
+

@@ -1,0 +1,46 @@
+Optimization on FeCO4 (C2v), S0
+Fe
+C 1 rFeCAx*
+C 1 rFeCEq* 2 aCAxCEq*
+C 1 rFeCEq* 2 aCAxCEq* 3 dC
+C 1 rFeCEq* 2 aCAxCEq* 3 dnC
+O 1 rFeOAx* 3 aCAxCEq* 2 d0
+O 1 rFeOEq* 2 aCAxOEq* 3 d0
+O 1 rFeOEq* 2 aCAxOEq* 4 d0
+O 1 rFeOEq* 2 aCAxOEq* 5 d0
+
+rFeCAx  =   1.7623589608
+rFeCEq  =   1.8461720830
+rFeOAx  =   2.9263744026
+rFeOEq  =   3.0060084560 
+aCAxCEq =  91.5136350627
+aCAxOEq =  90.4389159280
+d0      =    0.00000
+dnC     = -120.00000
+dC      =  120.0000
+
+*ACES2(CALC = CCSD(T) 
+      BASIS = SPECIAL
+FROZEN_CORE = ON
+ OCCUPATION = 28-13
+LOCK_ORBOCC = TRUE
+SCF_DAMPING = 500   
+   SCF_CONV = 9 
+    CC_CONV = 7 
+ LINEQ_CONV = 7 
+   SCF_MAXCYC = 500
+    CC_MAXCYC = 500
+ LINEQ_MAXCYC = 500
+       MEMORY = 32
+     MEM_UNIT = GB)
+
+Fe:aug-cc-pVDZ
+C:aug-cc-pVDZ
+C:aug-cc-pVDZ
+C:aug-cc-pVDZ
+C:aug-cc-pVDZ
+O:aug-cc-pVDZ
+O:aug-cc-pVDZ
+O:aug-cc-pVDZ
+O:aug-cc-pVDZ
+
